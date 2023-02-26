@@ -31,5 +31,25 @@
 
 - subscribe </br>
 구독 목록 페이지 listForm </br>
+</br>
+</br>
 
+## 2. 테이블 생성
+```sql
+create table user(
+	user_id INT primary KEY auto_increment,
+	user_name VARCHAR(20),
+	password VARCHAR(20),
+	email VARCHAR(20),
+	nick_name VARCHAR(20),
+	created_at TIMESTAMP
+);
+```
+</br>
+</br>
 
+## 3. 더미데이터
+```sql
+INSERT INTO user(user_name, PASSWORD, email, nick_name,created_at)
+VALUES ('ssar', '1234', 'ssar@nate.com', 'ssar1', NOW());
+```
